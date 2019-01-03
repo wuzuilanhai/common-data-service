@@ -35,7 +35,7 @@ public enum KpiEnum {
     WEB_TRADE_STATISTICS_TURNOVER(20, DatabaseEnum.TRADE.getDatabase(), SqlConstants.WEB_TRADE_STATISTICS_TURNOVER, "交易统计（成交量）", "start,end,userId"),
     WEB_FINANCE_STATISTICS(21, DatabaseEnum.USER.getDatabase(), SqlConstants.WEB_FINANCE_STATISTICS, "财务统计", "start,end,userId"),
 
-    SCREEN_DEAL_INFO(22, DatabaseEnum.TRADE.getDatabase(), SqlConstants.SCREEN_DEAL_INFO, "洪湾中心渔港最新成交信息", null),
+    SCREEN_DEAL_INFO(22, DatabaseEnum.TRADE.getDatabase(), SqlConstants.SCREEN_DEAL_INFO, "最新成交信息", null),
     SCREEN_USER_SN(23, DatabaseEnum.USER.getDatabase(), SqlConstants.SCREEN_USER_SN, "查询客户代码", "userId"),
     SCREEN_TOP_TEN_FISH(24, DatabaseEnum.TRADE.getDatabase(), SqlConstants.SCREEN_TOP_TEN_FISH, "交易行情-查询前10渔种", "start,end"),
     SCREEN_RECENTLY_PRICE(25, DatabaseEnum.TRADE.getDatabase(), SqlConstants.SCREEN_RECENTLY_PRICE, "交易行情-查询最近价", "productId"),
