@@ -137,7 +137,7 @@ public class NamedPreparedStatement {
     private List<Integer> getIndexes(String name) {
         List<Integer> indexes = indexMap.get(name);
         if (indexes == null) {
-            throw new DataException("Parameter not found: " + name);
+            throw new DataException("参数不能为空: " + name);
         }
         return indexes;
     }
