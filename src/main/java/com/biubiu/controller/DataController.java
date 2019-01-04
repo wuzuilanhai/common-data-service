@@ -22,7 +22,7 @@ public class DataController {
      */
     @GetMapping("/kpi/{code}")
     public Object kpi(@PathVariable("code") Integer code, String json) {
-        return dataService.kpi(code,json);
+        return dataService.kpi(code, json);
     }
 
 }

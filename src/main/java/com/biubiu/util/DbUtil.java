@@ -214,8 +214,12 @@ public class DbUtil {
 
     private static void doRemoveData(List<String> keys, Map<String, Object> valueMap, List<String> removeData) {
         for (String key : removeData) {
-            keys.remove(key);
-            valueMap.remove(key);
+            if (keys != null) {
+                keys.remove(key);
+            }
+            if (valueMap != null) {
+                valueMap.remove(key);
+            }
         }
     }
 
