@@ -198,6 +198,7 @@ public class DbUtil {
      */
     private static String parseSqlIfIn(List<String> keys, Map<String, Object> valueMap, String sql) {
         List<String> removeData = new ArrayList<>();
+        if (valueMap == null) return sql;
         for (Map.Entry<String, Object> entry : valueMap.entrySet()) {
             String key = entry.getKey();
             Object value = entry.getValue();
