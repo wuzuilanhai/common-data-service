@@ -244,7 +244,7 @@ public class DbUtil {
             for (String key : keys) {
                 Object value = valueMap.get(key);
                 if (value == null) {
-                    throw new DataException("query parameter require not null : " + key);
+                    throw new DataException("查询参数不能为空 : " + key);
                 }
                 String str = value.toString();
                 if (value instanceof Integer) {
