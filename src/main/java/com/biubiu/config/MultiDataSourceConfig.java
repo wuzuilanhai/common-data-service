@@ -21,7 +21,7 @@ public class MultiDataSourceConfig {
     private static Map<String, DruidDataSource> dataSources = new ConcurrentHashMap<>();
 
     public static DruidDataSource getOrCacheDataSource(String database, String url, String user, String password, String driver) {
-        return Optional.ofNullable(dataSources.get(url)).orElseGet(() -> {
+        return Optional.ofNullable(dataSources.get(database)).orElseGet(() -> {
             DruidDataSource druidDataSource = addDataSource(url, user, password, driver);
             dataSources.put(database, druidDataSource);
             LOGGER.info("容器初始化缓存多数据源 {}", druidDataSource);
